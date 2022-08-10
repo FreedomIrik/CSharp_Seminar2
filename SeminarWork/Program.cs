@@ -68,5 +68,5 @@ if (number % 7 == 0 && number % 23 == 0)
 }
 else
 {
-    System.Console.WriteLine("нет");
+    System.Console.WriteLine();
 }
