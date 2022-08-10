@@ -31,11 +31,11 @@ int result = firstDigit*10 + secondDigit;
 
 System.Console.WriteLine(result);*/
 
-/* Напишите программу, которая будет принимать на вход два числа и выводить,
+/* Задача №12. Напишите программу, которая будет принимать на вход два числа и выводить,
 является ли второе число кратным первому. Если число 2 не кратно числу 1, 
 то программа выводит остаток от деления. 
 34, 5 -> не кратно, остаток 4 
-16, 4 -> кратно */
+16, 4 -> кратно 
 
 System.Console.WriteLine("Введите первое число: ");
 int firstnumber = Convert.ToInt32(Console.ReadLine());
@@ -51,4 +51,22 @@ else
 {
     int remain = firstnumber % secondnumber;
     System.Console.WriteLine($"Не кратно, остаток {remain}");
+}*/
+
+/* Задача №14. Напишите программу, которая принимает на вход число и 
+проверяет, кратно ли оно одновременно 7 и 23. 
+14 -> нет 
+46 -> нет 
+161 -> да*/
+
+System.Console.WriteLine("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+if (number % 7 == 0 && number % 23 == 0)
+{
+    System.Console.WriteLine("да");
+}
+else
+{
+    System.Console.WriteLine("нет");
 }
