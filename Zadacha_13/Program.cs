@@ -7,16 +7,16 @@
 
 System.Console.WriteLine("Введите число: ");
 
-int[] array = {Convert.ToInt32(Console.ReadLine())};
+string number = Console.ReadLine();
 
-int n = array.Length;
+int size = number.Length;
 
 
-if (n < 3)
-{
-    System.Console.WriteLine("третьей цифры нет");
-}
+if (number.Length < 3)
+	{
+	Console.WriteLine("Третьей цифры нет");
+	}
 else
-{
-    System.Console.WriteLine(array[2]);
-}
+	{
+		Console.WriteLine(number[2]);
+	}
